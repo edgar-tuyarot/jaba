@@ -16,46 +16,46 @@ public class UsuarioController implements UsuarioDao {
     @Autowired
     private UsuarioDao usuarioDao;
 
-    @RequestMapping(value = "usuarios")
+    @RequestMapping(value = "api/usuarios")
     public List<Usuario> getUsuarios(){
 
-        return usuarioDao.getUsuarios()
+        return usuarioDao.getUsuarios();
 
 
     }
 
 
 
-    @RequestMapping(value = "usuario/{id}")
-    public Usuario getUsuario(@PathVariable String id){
-        Usuario user1 = new Usuario();
-        user1.setId(01);
-        user1.setNombre("Edgar");
-        user1.setApellido("Tuyarot");
-        user1.setTelefono("3624555419");
-        user1.setEmail("edgar.tuyarot@gmail.com");
-        return user1;
-    }
-
-    @RequestMapping(value = "edit")
-    public Usuario editarUsuario(){
-        Usuario user1 = new Usuario();
-        user1.setNombre("Edgar");
-        user1.setApellido("Tuyarot");
-        return user1;
-    }
-    @RequestMapping(value = "find")
-    public Usuario buscarUsuario(){
-        Usuario user1 = new Usuario();
-        user1.setNombre("Edgar");
-        user1.setApellido("Tuyarot");
-        return user1;
-    }
-    @RequestMapping(value = "delete")
-    public Usuario borrarUsuario(){
-        Usuario user1 = new Usuario();
-        user1.setNombre("Edgar");
-        user1.setApellido("Tuyarot");
-        return user1;
-    }
+//    @RequestMapping(value = "usuario/{id}")
+//    public Usuario getUsuario(@PathVariable String id){
+//        Usuario user1 = new Usuario();
+//        user1.setId(01);
+//        user1.setNombre("Edgar");
+//        user1.setApellido("Tuyarot");
+//        user1.setTelefono("3624555419");
+//        user1.setEmail("edgar.tuyarot@gmail.com");
+//        return user1;
+//    }
+//
+//    @RequestMapping(value = "edit")
+//    public Usuario editarUsuario(){
+//        Usuario user1 = new Usuario();
+//        user1.setNombre("Edgar");
+//        user1.setApellido("Tuyarot");
+//        return user1;
+//    }
+//    @RequestMapping(value = "find")
+//    public Usuario buscarUsuario(){
+//        Usuario user1 = new Usuario();
+//        user1.setNombre("Edgar");
+//        user1.setApellido("Tuyarot");
+//        return user1;
+//    }
+//    @RequestMapping(value = "delete")
+//    public Usuario borrarUsuario(){
+//        Usuario user1 = new Usuario();
+//        user1.setNombre("Edgar");
+//        user1.setApellido("Tuyarot");
+//        return user1;
+//    }
 }
